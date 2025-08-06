@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(255, 228, 196, 0.15);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.form {
+    
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 192, 192, 0.371);
+}
+
+.first_row, .second_row, .third_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #ff9d4c;
+    box-shadow: 0 0 5px rgba(255, 157, 76, 0.5);
+    outline: none;
+}
+
+.subDiv {
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.submit {
+    padding: 14px 28px;
+    background-color: #ff9d4c;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit:hover {
+    background-color: #e88c42;
+    transform: translateY(-2px);
+}
+
+.submit:active {
+    background-color: #d27a3a;
+    transform: translateY(1px);
+}
+
+.pEreur {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.099);
+    border-radius: 7px;
+}
+
+.pSuccess {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 255, 0, 0.099);
+    border-radius: 7px;
+}
+.first_row {
+    position: relative; /* Enables absolute positioning for the icon */
+    width: 100%;
+    margin-right: 20px;
+}
+
+.first_row input {
+    padding-right: 45px;
+    width: 100%; /* Add space for the icon inside the input */
+}
+
+.first_row .cart-icon {
+    position: absolute; /* Position the icon inside the input */
+    right: 10px; /* Distance from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    width: 24px; /* Adjust the icon size */
+    height: 24px;
+    pointer-events: none; /* Prevent icon from blocking input focus */
+}
+
+
+@media (max-width: 768px) {
+    .first_row, .second_row, .third_row {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+    }
+}

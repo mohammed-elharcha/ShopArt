@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Signika+Negative:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+.first{
+    background-color: #ffab912e;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 60px; */
+}
+.text{
+    max-width: 653px;
+    width: 100%;
+}
+.header-text{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    
+    }
+.middle-text{
+    font-size: 58px;
+    text-align: center;
+}
+.paragraph{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+.button{
+display: flex;
+justify-content: center;
+padding-top: 30px;
+}
+.shop-now{
+    background-color: #F65E2D;
+    padding: 10px;
+    border-radius: 50px;
+    /* margin-top: 30px; */
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.second{
+    background-color: black;
+    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.advantages-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.advantages{
+    width: 100%;
+    height: 140px;
+    background-color: #64646486;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.advantages i{
+    color: white;
+    font-size: 80px;
+}
+.advantages h3{
+    color: white;
+    font-family: "Sour Gummy", serif;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.artworks{
+    text-align: center;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+.third{
+    background-color: #ffa65835;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 70px;
+    padding-bottom: 100px;
+}
+.card{
+    max-width: 320px;
+    width: 100%;
+    /* background-color: red; */
+
+}
+.card img{
+    width: 100%;
+    border-radius: 20px;
+    height: 400px;
+
+}
+.card-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+.price{
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.449);
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+
+}
+.order-now{
+    background-color: #c24343f6;
+    padding: 7px;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.order-now:hover{
+    background-color: #d42f2f;
+    transition: 0.2s;
+}
+.btn-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.fourth{
+    background-color: #f3562fc1;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px;
+}
+.discount-title{
+    color: white;
+    font-size: 40px;
+}
+.announce{
+    background-color: #d61b27cb;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px black;
+    border: none;
+    transition: 0.3s;
+}
+.announce i{
+    color: black;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.announce:hover{
+    background-color: #d61724;
+    transition: 0.3s;
+}
+.fifth{
+    background-color: #fd5e5e39;
+    padding-top: 50px;
+}
+.review-title{
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    font-family: "Signika Negative", sans-serif;
+    padding-bottom: 40px;
+
+
+}
+.review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding-bottom: 70px;
+
+}
+.review-card{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    background-color:#eeeeeec9;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+
+}
+.review-card img{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    
+}
+.review-header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.review-rating{
+    color: rgb(255, 162, 0);
+    font-size: 20px;
+}
+.review-name{
+    font-size: 20px;
+}
+.review-card p{
+    margin-left: 20px;
+    width: 80%;
+
+}
+  @media (min-width: 769px) and (max-width: 1199px) {
+.advantages i {
+    font-size: 30px;
+}
+.advantages h3{
+    font-size: 20px;
+}
+/* .advantages-container{ */
+    /* display: flex; */
+    /* justify-content: center; */
+/* } */
+
+}
+  @media (max-width: 768px) {
+.first{
+display: flex;
+flex-direction: column;
+padding: 50px;
+}
+
+.advantages-container{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph{
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.discount-title{
+    font-size: 20px;
+}
+.announce{
+    padding:202 px;
+    /* width: 100%; */
+    font-size: 13px;
+}
+.review-container{
+    display: flex;
+    flex-direction: column;
+}
+}
+

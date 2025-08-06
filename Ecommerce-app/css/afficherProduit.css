@@ -1,0 +1,161 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+  background-color: #ff9d4c;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e88a3e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.product-card {
+  width: 300px;
+  height: 500px;
+  /* position: relative; */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  height: 50%;
+  width: 100%;
+  object-fit: fill;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  opacity: 0.9;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: #777;
+}
+
+.product-price {
+  color: #ff6b6b;
+  font-weight: lighter;
+}
+
+.product-category {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: #888;
+}
+
+.product-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.col-md-3 {
+  flex: 1 0 23%;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+h4.text-danger {
+  color: #e74c3c !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 1 0 45%;
+  }
+
+  .form-control, .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-3 {
+    flex: 1 0 90%;
+  }
+}
